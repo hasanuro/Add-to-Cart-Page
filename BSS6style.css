@@ -1,0 +1,73 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 25px;
+}
+.maincard{
+    display: flex;
+    /* flex: 2; */
+    flex-wrap: wrap;
+    /* justify-content: space-evenly; */
+    gap: 20px;
+    /* line-height: 20px; */
+}
+.cartcontainer .addtocartcontainer{
+    position: relative;
+}
+.carttog{
+    display: flex;
+    cursor: pointer;
+}
+.fa-cart-plus{
+    font-size: 25px;
+    /* margin-right: 10px; */
+    color: rgb(54, 54, 217);
+}
+.cartcount{
+    background-color: rgb(198, 67, 67);
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    left: 25px;
+    bottom: 10px;
+    width: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+.card{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.cartdetailes{
+    display: none;
+    position: absolute;
+
+    background-color: aliceblue;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border: 2px solid gray;
+right: 0;
+/* top: 100%; */
+border-radius: 6px;
+    width: 300px;
+    z-index: 10;
+}
+
+.additem{
+    max-height: 350px;
+    overflow-y: auto;
+    
+}
+.card-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.card-item img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
